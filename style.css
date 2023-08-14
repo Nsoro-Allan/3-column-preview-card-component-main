@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Inter:wght@600&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive; 
+    text-transform: uppercase; 
+    color: hsl(0, 0%, 95%);
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif; 
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.card-container{
+    display: flex;
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card1{
+    background: hsl(31, 77%, 52%);
+    padding: 25px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.card1 .card-button button{
+    padding: 10px;
+    color: hsl(31, 77%, 52%);
+    border-radius: 50px;
+    width: 110px;
+    border: 1px solid hsl(0, 0%, 95%);
+    font-weight:bold;
+}
+
+.card1 .card-button button:hover{
+    background: transparent;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.card2{
+    background: hsl(184, 100%, 22%);
+    padding: 25px;
+}
+
+.card2 .card-button button{
+    padding: 10px;
+    color: hsl(184, 100%, 22%);
+    border-radius: 50px;
+    width: 110px;
+    border: 1px solid hsl(0, 0%, 95%);
+    font-weight:bold;
+}
+
+.card2 .card-button button:hover{
+    background: transparent;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.card3{
+    background: hsl(179, 100%, 13%);
+    padding: 25px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.card3 .card-button button{
+    padding: 10px;
+    color: hsl(179, 100%, 13%);
+    border-radius: 50px;
+    width: 110px;
+    border: 1px solid hsl(0, 0%, 95%);
+    font-weight:bold;
+}
+
+.card3 .card-button button:hover{
+    background: transparent;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.card-img{
+    padding-top: 15px;
+}
+
+.card-title{
+    padding-top: 15px;
+}
+
+.card-description{
+    padding-top: 20px;
+}
+
+.card-description p{
+    font-size: 13px;
+}
+
+.card-button{
+    padding-top: 80px;
+}
+
+/* Responsive Starts Here */
+@media only screen and (max-width: 390px){
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 300px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .card-button{
+        padding-top: 20px;
+    }
+
+    .card1{
+        background: hsl(31, 77%, 52%);
+        padding: 25px;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .card3{
+        background: hsl(179, 100%, 13%);
+        padding: 25px;
+        border-radius: 0px 0px 8px 8px;
+    }
+}
+/* Responsive Ends Here */
+
